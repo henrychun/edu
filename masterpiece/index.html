@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <script src="javascript/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#gotop").hide();
+            $("#gotop").click(function() {
+                $("html,body").animate({
+                    offsetTop: 0
+                });
+            });
+            $("nav a").click(function() {
+                var _target = $(this).data("target");
+                //console.log(_target);
+                var _offset = $("#" + _target).offset().top;
+                //console.log(_offset);
+                $("html,body").animate({
+                    scrollTop: _offset
+                });
+                return false
+            });
+            $(window).scroll(function() {
+                var h = $("html,body").scrollTop();
+                if (h > 1200) {
+                    $("#gotop").fadeIn();
+                } else {
+                    $("#gotop").fadeOut();
+                }
+            });
+        });
+    </script>
+
+</head>
+
+
+
+<body>
+    <nav class="full-width">
+        <div class="col-1 clearfix">
+            <div class="logo">AFELA</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#" data-target="home">HOME</a></li>
+                    <li><a href="#" data-target="works">WORKS</a></li>
+                    <li><a href="#" data-target="services">SERVICES</a></li>
+                    <li><a href="#" data-target="about">ABOUT</a></li>
+                    <li><a href="#" data-target="purchase">PHURCHASE</a></li>
+                    <li><a href="#" data-target="blog">BLOG</a></li>
+                    <li><a href="#" data-target="contact">CONTACT</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="full-width" id="home">
+        <div class="fixed-width">
+            <h1>AMAZING DESIGN</h1>
+            <p>Flexible and Creative. Meet the New Style</p>
+        </div>
+    </header>
+    <div id="slogan" class="full-width">
+        <div class="fixed-width">
+            <h2>WE ARE FAMILY<br>COME AND JOIN US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam totam, velit, veritatis vitae deserunt optio quisquam porro maiores, quos aspernatur, quidem nisi distinctio perferendis. Corporis optio hic quasi, eveniet dolorum!</p>
+        </div>
+    </div>
+
+    <div id="works" class="full-width"></div>
+
+
+    <div id="services" class="full-width">
+        <div class="fixed-width">
+            <h2>BEST SERVICES</h2>
+            <p>We help our clients market to the world and inspire minds of people</p>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-3">
+                <span class="fa fa-camera-retro fa-3x"></span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi assumenda, pariatur ducimus accusantium voluptatem placeat vitae! Nesciunt eaque nam architecto mollitia iure tenetur, consequatur possimus, perferendis consequuntur alias nemo.</p>
+            </div>
+            <div class="col-3">
+                <span class="fa fa-flask fa-3x"></span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi assumenda, pariatur ducimus accusantium voluptatem placeat vitae! Nesciunt eaque nam architecto mollitia iure tenetur, consequatur possimus, perferendis consequuntur alias nemo.</p>
+            </div>
+            <div class="col-3">
+                <span class="fa fa-hourglass fa-3x"></span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi assumenda, pariatur ducimus accusantium voluptatem placeat vitae! Nesciunt eaque nam architecto mollitia iure tenetur, consequatur possimus, perferendis consequuntur alias nemo.</p>
+            </div>
+            <div class="col-3">
+                <span class="fa fa-heart fa-3x"></span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi assumenda, pariatur ducimus accusantium voluptatem placeat vitae! Nesciunt eaque nam architecto mollitia iure tenetur, consequatur possimus, perferendis consequuntur alias nemo.</p>
+            </div>
+            <div class="col-3">
+                <span class="fa fa-bolt fa-3x"></span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi assumenda, pariatur ducimus accusantium voluptatem placeat vitae! Nesciunt eaque nam architecto mollitia iure tenetur, consequatur possimus, perferendis consequuntur alias nemo.</p>
+            </div>
+            <div class="col-3">
+                <span class="fa fa-cloud fa-3x"></span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quasi assumenda, pariatur ducimus accusantium voluptatem placeat vitae! Nesciunt eaque nam architecto mollitia iure tenetur, consequatur possimus, perferendis consequuntur alias nemo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner" class="full-width">
+        <div class="fixed-width">
+            <h2>TITLE</h2>
+            <p>What are you waiting for?</p>
+        </div>
+    </div>
+
+
+    <div id="about" class="full-width">
+        <div class="fixed-width">
+            <h2>ABOUT US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repellat in fugit accusantium sint velit, explicabo vero quam debitis ab placeat sequi odio alias ipsa fugiat aliquam laudantium, veritatis! Itaque?</p>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-3">
+                <div class="pic"><img src="images/image02.jpeg" alt=""></div>
+                <h3>WORD</h3>
+                <p>text</p>
+            </div>
+            <div class="col-3">
+                <div class="pic"><img src="images/image03.jpeg" alt=""></div>
+                <h3>WORD</h3>
+                <p>text</p>
+            </div>
+            <div class="col-3">
+                <div class="pic"><img src="images/image04.jpeg" alt=""></div>
+                <h3>WORD</h3>
+                <p>text</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="purchase" class="full-width">
+        <div class="fixed-width">
+            <h2>ARE YOU READY TO SLEEP??</h2>
+            <a href="#">SLEEP NOW</a>
+        </div>
+    </div>
+    <div id="blog" class="full-width">
+        <div class="fixed-width">
+            <h2>LATEST NEWS</h2>
+            <p>comming soon!!!</p>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-4">
+                <div class="gallery">
+                    <img src="images/image05.jpeg" alt="">
+                    <div class="date">
+                        <div class="day">13</div>
+                        <div class="month">Mar</div>
+                    </div>
+                    <h3>Sence1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus at, labore repellat aliquam quis harum vel ipsum iusto, ab ad maiores a deserunt adipisci consequuntur! Molestias suscipit illo voluptate ea.</p>
+                    <a href="#">read me >></a>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="gallery">
+                    <img src="images/image06.jpeg" alt="">
+                    <div class="date">
+                        <div class="day">13</div>
+                        <div class="month">Mar</div>
+                    </div>
+                    <h3>Sence1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus at, labore repellat aliquam quis harum vel ipsum iusto, ab ad maiores a deserunt adipisci consequuntur! Molestias suscipit illo voluptate ea.</p>
+                    <a href="#">read me >></a>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="gallery">
+                    <img src="images/image07.jpeg" alt="">
+                    <div class="date">
+                        <div class="day">13</div>
+                        <div class="month">Mar</div>
+                    </div>
+                    <h3>Sence1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus at, labore repellat aliquam quis harum vel ipsum iusto, ab ad maiores a deserunt adipisci consequuntur! Molestias suscipit illo voluptate ea.</p>
+                    <a href="#">read me >></a>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="gallery">
+                    <img src="images/image08.jpeg" alt="">
+                    <div class="date">
+                        <div class="day">13</div>
+                        <div class="month">Mar</div>
+                    </div>
+                    <h3>Sence1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus at, labore repellat aliquam quis harum vel ipsum iusto, ab ad maiores a deserunt adipisci consequuntur! Molestias suscipit illo voluptate ea.</p>
+                    <a href="#">read me >></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="sponsor">
+        <div class="fixed-width clearfix">
+            <div class="col-6">
+                <span class="fa fa-facebook-square fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-apple fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-reddit fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-tripadvisor fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-twitter-square fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-steam-square fa-3x"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="full-width" id="contact">
+        <div class="fixed-width">
+            <h2>Contact</h2>
+            <p>your happiness is our wish.</p>
+        </div>
+        <div class="fixed-width clearfix">
+            <h3>INFORMATION</h3>
+            <div class="info">
+                <div class="info-item clearfix">
+                    <div class="info-icon"><span class="fa fa-home"></span></div>
+                    <div class="info-content">
+                        <ul>
+                            <li>Colifornia</li>
+                            <li>Afela inc</li>
+                            <li>48792</li>
+                            <li>Star apple st.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-item clearfix">
+                    <div class="info-icon"><span class="fa fa-phone"></span></div>
+                    <div class="info-content">
+                        (800)123-456-789
+                    </div>
+                </div>
+                <div class="info-item clearfix">
+                    <div class="info-icon"><span class="fa fa-envelope-open"></span></div>
+                    <div class="info-content">qwer@gmail.com</div>
+                </div>
+            </div>
+            <div class="form">
+                <div class="col-2">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Mail">
+                </div>
+                <div class="col-1">
+                    <textarea name="" id="" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <button class="btn">SEND MESSAGE</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--    footer-->
+    <footer class="full-width">
+        <div class="fixed-width">
+            <h2>AFELLA</h2>
+            <div class="sns">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+            <div class="copy">&copy;2017 AFELLA|design by HenryLee</div>
+        </div>
+    </footer>
+    <a href="#" data-target="gotop" id="gotop">top</a>
+</body>
+
+</html>
